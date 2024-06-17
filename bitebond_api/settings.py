@@ -13,8 +13,7 @@ SECRET_KEY = 'django-insecure-#3!rv!ltpqvniaf500@t!z43*1nqb4n5!n2j$^027_di2cut2z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '8000-andersh82-bitebondapi-audgpp35ex0.ws-eu114.gitpod.io'
+ALLOWED_HOSTS = ['127.0.0.1'
     ]
 
 CSRF_TRUSTED_ORIGINS = [
