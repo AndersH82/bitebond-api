@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Profile, Recipe, Comment
 
 
-class ProfileSerializer(serializers.MocelSerializer):
+class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = ['id', 'user', 'bio']

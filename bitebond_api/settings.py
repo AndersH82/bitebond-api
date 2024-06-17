@@ -25,8 +25,13 @@ SECRET_KEY = 'django-insecure-#3!rv!ltpqvniaf500@t!z43*1nqb4n5!n2j$^027_di2cut2z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '8000-andersh82-bitebondapi-audgpp35ex0.ws-eu114.gitpod.io'
+    ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-andersh82-bitebondapi-audgpp35ex0.ws-eu114.gitpod.io',
+]
 
 # Application definition
 
@@ -45,6 +50,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
